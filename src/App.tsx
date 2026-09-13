@@ -1,4 +1,6 @@
+import Hero from "./component/Hero";
 import Nav from "./component/Nav";
+import Technologies from "./component/Technologies";
 
 
 const FetchData=async ()=>{
@@ -16,9 +18,11 @@ function App() {
 
 
   return (
-    <>
+    <div className="bg-base-200 font-roboto">
         <Nav />
-    </>
+        <Hero />
+        
+    </div>
   )
 }
 
