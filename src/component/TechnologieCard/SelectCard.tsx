@@ -10,12 +10,20 @@ import type { technologyMainType } from "../../types/mainType";
 
 interface IpropsType {
   technologies: technologyMainType[];
+  setSelectedTechnology:Dispatch<SetStateAction<technologyMainType[]>>;
+  selectedTechnology:technologyMainType[]
 }
 
-const SelectCard = ({ technologies} :IpropsType) => {
+const SelectCard = ({ technologies,setSelectedTechnology,selectedTechnology }: IpropsType) => {
 
 
-  
+  const handleSelect=(technology:technologyMainType)=>{
+    const newSelectArray = [...selectedTechnology,technology];
+
+    setSelectedTechnology(newSelectArray);
+    console.log(selectedTechnology,'hello');
+  }
+
 
 
 
@@ -49,7 +57,10 @@ const SelectCard = ({ technologies} :IpropsType) => {
                 <div className="mt-6">
                   <button className="btn bg-[#0A0F1D] btn-block text-white rounded-[8px]"
 
-                   
+                    onClick={()=>{
+                       handleSelect(technology);
+                    }}
+                  
                   
                   >
                     Add to Stack
