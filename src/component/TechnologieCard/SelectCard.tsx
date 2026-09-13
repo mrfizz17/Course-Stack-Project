@@ -1,6 +1,6 @@
 //select-------card
 
-import  { useState, type Dispatch, type SetStateAction } from "react";
+import  { type Dispatch, type SetStateAction } from "react";
 
 
 import { FaStar } from "react-icons/fa";
