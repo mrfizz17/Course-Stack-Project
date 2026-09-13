@@ -3,7 +3,7 @@ import Logo from '../assets/logo-text.png';
 const Nav = () => {
   return (
     <div className="bg-base-200 text-[#475569] shadow-sm mb-0.5">
-      <div className="navbar bg-base-100 container mx-auto">
+      <div className="navbar bg-base-200 container mx-auto">
         <div className="navbar-start">
            <img src={Logo} alt="" />
           
