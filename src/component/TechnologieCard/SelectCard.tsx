@@ -1,31 +1,39 @@
 //select-------card
 
-
-
-import React, { type Dispatch, type SetStateAction } from "react";
+import React, { useState, type Dispatch, type SetStateAction } from "react";
 
 import reactLogo from "../../assets/react.svg";
 import { FaStar } from "react-icons/fa";
 import type { technologyMainType } from "../../types/mainType";
+import { toast } from "react-toastify";
 
 interface IpropsType {
   technologies: technologyMainType[];
-  setSelectedTechnology:Dispatch<SetStateAction<technologyMainType[]>>;
-  selectedTechnology:technologyMainType[]
+  setSelectedTechnology: Dispatch<SetStateAction<technologyMainType[]>>;
+  selectedTechnology: technologyMainType[];
 }
 
-const SelectCard = ({ technologies,setSelectedTechnology,selectedTechnology }: IpropsType) => {
+const SelectCard = ({
+  technologies,
+  setSelectedTechnology,
+  selectedTechnology,
+}: IpropsType) => {
+  const [disableButton, setDisableButton] = useState(false);
 
+  const handleSelect = (technology: technologyMainType) => {
+    if (selectedTechnology.find((tech) => tech.id === technology.id)) {
+      toast("already selected");
 
-  const handleSelect=(technology:technologyMainType)=>{
-    const newSelectArray = [...selectedTechnology,technology];
+      setDisableButton(true);
+      return;
+    }
+
+    const newSelectArray = [...selectedTechnology, technology];
 
     setSelectedTechnology(newSelectArray);
-    console.log(selectedTechnology,'hello');
-  }
-
-
-
+    toast.success(`${technology.name} is Added to stack`);
+    console.log(selectedTechnology, "hello");
+  };
 
   return (
     <div className=" grid md:grid-cols-3 gap-2 items-stretch">
@@ -43,25 +51,38 @@ const SelectCard = ({ technologies,setSelectedTechnology,selectedTechnology }: I
 
                 <h2 className="text-3xl font-bold  mb-2">{technology.name}</h2>
 
-                <p>
-                  {technology.description}
-                </p>
+                <p>{technology.description}</p>
 
                 <ul className="flex  gap-1 justify-between items-center mt-2">
-                  <li className="bg-[#cfcfcf] px-2 py-1 rounded-[5px]">{technology.category}</li>
+                  <li className="bg-[#cfcfcf] px-2 py-1 rounded-[5px]">
+                    {technology.category}
+                  </li>
                   <li className="text-[#6B7280] bg-base-200 p-1 rounded-[5px]">
                     {technology.difficulty}
                   </li>
-                  <li className="text-[#F59E0B] font-semibold flex items-center gap-1"><FaStar />{technology.rating}</li>
+                  <li className="text-[#F59E0B] font-semibold flex items-center gap-1">
+                    <FaStar />
+                    {technology.rating}
+                  </li>
                 </ul>
                 <div className="mt-6">
-                  <button className="btn bg-[#0A0F1D] btn-block text-white rounded-[8px]"
-
-                    onClick={()=>{
-                       handleSelect(technology);
+                  <button
+                    className={`btn bg-[#0A0F1D] btn-block text-white rounded-[8px] 
+                    ${
+                      selectedTechnology.some(
+                        (item) => item.id === technology.id,
+                      )
+                        ? "!bg-gray-400"
+                        : "!bg-[#0A0F1D]"
+                    }
+                  
+                  `}
+                    onClick={() => {
+                      handleSelect(technology);
                     }}
-                  
-                  
+                    disabled={selectedTechnology.some(
+                      (item) => item.id === technology.id,
+                    )}
                   >
                     Add to Stack
                   </button>
