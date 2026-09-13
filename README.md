@@ -1,32 +1,68 @@
-# React + TypeScript + Vite
+# 🧩 TechStack Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A simple React project where users can explore different technologies and build their own tech stack.
 
-Currently, two official plugins are available:
+You can select technologies, see them in your stack, and remove them whenever you want. I built this project to practice React concepts like components, props, state, hooks, conditional rendering, and working with JSON data.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Technologies Used
 
-## React Compiler
+* ⚛️ React
+* 📘 TypeScript
+* 🎨 Tailwind CSS
+* 🌼 DaisyUI
+* 📦 JSON
+* ⚡ Vite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the Oxlint configuration
+* 🔍 Explore different technologies with their details
+* ➕ Add technologies to your own stack
+* 🗑️ Remove selected technologies from your stack
+* 🚫 Prevent the same technology from being added twice
+* 📱 Responsive design for different screen sizes
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+---
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+# ⚛️ React Questions & Answers
+
+### 1. What is JSX, and why is it used in React?
+
+JSX lets us write HTML-like code inside JavaScript. It makes writing React UI easier and cleaner.
+
+### 2. What is the difference between props and state?
+
+Props are data passed from a parent to a child. State is data that a component manages and can change.
+
+### 3. What does `useState` do, and where did you use it?
+
+`useState` stores data that can change in a component. I used it to store the technologies selected by the user.
+
+### 4. What does `useEffect` do, and why did you use it?
+
+`useEffect` runs code after rendering. I used it to load the JSON data when the app starts.
+
+### 5. Why does every `.map()` item need a unique `key`?
+
+The `key` helps React identify each item and know which item has changed.
+
+### 6. What is conditional rendering?
+
+Conditional rendering means showing something only when a condition is true.
+
+For example, I show a message when the stack is empty:
+
+```tsx
+{selectedTechnology.length === 0 && (
+  <p>Your stack is empty.</p>
+)}
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+### 7. How do you pass data from a parent to a child, and how does the child send something back?
+
+The parent sends data using **props**. The child can send something back by calling a function that the parent passed as a prop.
+
+---
+
+## 💡 What I Learned
+
+This project helped me understand how React components work together and how state changes can update the UI automatically. I also got more comfortable with props, hooks, `.map()`, and conditional rendering.
