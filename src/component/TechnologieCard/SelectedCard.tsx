@@ -38,7 +38,7 @@ const SelectedCard = ({
       <div className="mt-4 card bg-base-100 shadow-2xl border-2 border-[#dadada] p-4 rounded-2xl">
         <p className="text-2xl font-semibold">Your Stack</p>
         <p className="text-[15px] text-[#94A3B8] mb-2 ">
-          0 Technology Selected
+          No technology selected yet
         </p>
 
         <div className="mb-4">

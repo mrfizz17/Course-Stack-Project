@@ -78,13 +78,21 @@ const SelectCard = ({
                   
                   `}
                     onClick={() => {
+                      if (selectedTechnology.some((item) => item.id === technology.id)
+                      ){
+                        toast.warning("This technology is already selected!");
+                        return;
+                      }
+
+
+
                       handleSelect(technology);
                     }}
-                    disabled={selectedTechnology.some(
-                      (item) => item.id === technology.id,
-                    )}
+                    
                   >
-                    Add to Stack
+                    {selectedTechnology.some((item) => item.id === technology.id)
+                      ? "✓ Added to Stack" : "Add to Stack"}
+                    
                   </button>
                 </div>
               </div>

@@ -2,7 +2,7 @@ import Logo from '../assets/logo-text.png';
 import { RxHamburgerMenu } from "react-icons/rx";
 const Nav = () => {
   return (
-    <div className="bg-base-200 text-[#475569] shadow-sm mb-0.5">
+    <div className="bg-base-200 text-[#475569] shadow-sm mb-0.5 sticky top-0 z-1">
       <div className="navbar bg-base-200 container mx-auto gap-3 ">
 
         <div className='md:hidden mr-4'>
