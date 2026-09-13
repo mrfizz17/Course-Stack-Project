@@ -3,6 +3,7 @@ import Hero from "./component/Hero";
 import Nav from "./component/Nav";
 import Technologies from "./component/Technologies";
 import type { technologyMainType } from "./types/mainType";
+import Footer from "./component/Footer";
 
 
 
@@ -28,6 +29,10 @@ function App() {
         <Suspense fallback={<p>Loading........</p>}>
             <Technologies promiseData={promiseData()} />
         </Suspense>
+
+        <div className="divider"></div>
+
+        <Footer />
          
     </div>
   )

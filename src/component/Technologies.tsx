@@ -14,7 +14,7 @@ const Technologies = ({promiseData}:propsType) => {
   console.log(technologies)
 
   return (
-    <div className="container mx-auto mb-50 ">
+    <div className="container mx-auto mb-15 ">
       <h1 className="font-bold text-4xl">Explore the
         <span className="bg-linear-to-r from-[#EC4899] to-[#8B5CF6] bg-clip-text text-transparent"> Technologies
         </span>
