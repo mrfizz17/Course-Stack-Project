@@ -1,0 +1,152 @@
+[
+  {
+    "id": "javascript",
+    "name": "JavaScript",
+    "category": "Language",
+    "description": "A versatile programming language used to build interactive web applications and modern software.",
+    "icon": "https://icon.icepanel.io/Technology/svg/JavaScript.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Popular"
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "category": "Language",
+    "description": "A strongly typed programming language that builds on JavaScript for scalable application development.",
+    "icon": "https://icon.icepanel.io/Technology/svg/TypeScript.svg",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Trending"
+  },
+  {
+    "id": "python",
+    "name": "Python",
+    "category": "Language",
+    "description": "A high-level programming language known for its simplicity and wide use in web development, automation, and AI.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Python.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Popular"
+  },
+  {
+    "id": "java",
+    "name": "Java",
+    "category": "Language",
+    "description": "A widely used object-oriented programming language for enterprise applications, Android, and backend systems.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Java.svg",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": "Enterprise"
+  },
+  {
+    "id": "cpp",
+    "name": "C++",
+    "category": "Language",
+    "description": "A powerful systems programming language commonly used for competitive programming, games, and high-performance software.",
+    "icon": "https://icon.icepanel.io/Technology/svg/C++.svg",
+    "rating": 4.8,
+    "difficulty": "Advanced",
+    "badge": "Powerful"
+  },
+  {
+    "id": "csharp",
+    "name": "C#",
+    "category": "Language",
+    "description": "A modern object-oriented language widely used for .NET applications, backend systems, and game development.",
+    "icon": "https://icon.icepanel.io/Technology/svg/C-Sharp.svg",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": ".NET"
+  },
+  {
+    "id": "go",
+    "name": "Go",
+    "category": "Language",
+    "description": "A fast and efficient programming language designed for scalable backend services and cloud applications.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Go.svg",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": "Cloud"
+  },
+  {
+    "id": "rust",
+    "name": "Rust",
+    "category": "Language",
+    "description": "A systems programming language focused on performance, memory safety, and reliable software development.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Rust.svg",
+    "rating": 4.8,
+    "difficulty": "Advanced",
+    "badge": "Fast"
+  },
+  {
+    "id": "php",
+    "name": "PHP",
+    "category": "Language",
+    "description": "A server-side scripting language widely used for dynamic websites and web application development.",
+    "icon": "https://icon.icepanel.io/Technology/svg/PHP.svg",
+    "rating": 4.5,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Web"
+  },
+  {
+    "id": "kotlin",
+    "name": "Kotlin",
+    "category": "Language",
+    "description": "A modern programming language designed for concise and safe application development, especially on Android.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Kotlin.svg",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": "Android"
+  },
+  {
+    "id": "swift",
+    "name": "Swift",
+    "category": "Language",
+    "description": "Apple's modern programming language for building applications across iOS, macOS, watchOS, and other platforms.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Swift.svg",
+    "rating": 4.6,
+    "difficulty": "Intermediate",
+    "badge": "Apple"
+  },
+  {
+    "id": "ruby",
+    "name": "Ruby",
+    "category": "Language",
+    "description": "A developer-friendly programming language known for its elegant syntax and productive web development ecosystem.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Ruby.svg",
+    "rating": 4.4,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Elegant"
+  },
+  {
+    "id": "dart",
+    "name": "Dart",
+    "category": "Language",
+    "description": "A client-optimized programming language used primarily for building cross-platform applications with Flutter.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Dart.svg",
+    "rating": 4.5,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Flutter"
+  },
+  {
+    "id": "sql",
+    "name": "SQL",
+    "category": "Language",
+    "description": "A standard language used to store, query, manipulate, and manage data in relational databases.",
+    "icon": "https://icon.icepanel.io/Technology/svg/SQL.svg",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Essential"
+  },
+  {
+    "id": "scala",
+    "name": "Scala",
+    "category": "Language",
+    "description": "A powerful language combining object-oriented and functional programming for scalable applications.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Scala.svg",
+    "rating": 4.3,
+    "difficulty": "Advanced",
+    "badge": "Functional"
+  }
+]
