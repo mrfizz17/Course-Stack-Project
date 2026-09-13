@@ -13,7 +13,7 @@ const SelectCard = ({ technologies }: IpropsType) => {
       {technologies.map((technology) => {
         return (
           <div className="mt-4" key={technology.id}>
-            <div className="card w-80 bg-base-100 shadow-sm h-full">
+            <div className="card w-80 bg-base-100 shadow-md h-full">
               <div className="card-body">
                 <div className="flex justify-between ">
                   <img src={technology.icon} alt="" className="w-10 h-10" />

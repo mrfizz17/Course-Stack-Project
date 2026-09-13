@@ -1,6 +1,7 @@
 import { use } from "react";
 import SelectCard from "./TechnologieCard/SelectCard";
 import type { technologyMainType } from "../types/mainType";
+import SelectedCard from "./TechnologieCard/SelectedCard";
 
 interface propsType {
   promiseData: Promise<technologyMainType[]>
@@ -22,9 +23,17 @@ const Technologies = ({promiseData}:propsType) => {
         Pick one technology per category to build your ideal stack.
       </p>
 
-      
-      <SelectCard technologies={technologies}/>
+      <div className="grid grid-cols-4 gap-5">
+        <div className="col-span-3">
+          <SelectCard technologies={technologies}/>
+          
+        </div>
+        <div className="col-span-1">
+          <SelectedCard />
 
+        </div>
+      </div>
+      
 
     </div>
   );
