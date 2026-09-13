@@ -4,6 +4,8 @@ A simple React project where users can explore different technologies and build 
 
 You can select technologies, see them in your stack, and remove them whenever you want. I built this project to practice React concepts like components, props, state, hooks, conditional rendering, and working with JSON data.
 
+## PROJECT LIVE DEMO : 🔗 **([https://your-project-url.com](https://techstack-project-mustafiz.netlify.app/))**
+
 ## 🚀 Technologies Used
 
 * ⚛️ React
