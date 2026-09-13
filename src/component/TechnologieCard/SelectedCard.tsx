@@ -64,7 +64,7 @@ const SelectedCard = ({
             return (
               <div className="mb-4"  key={ind}>
                 <div className="mt-2 grid grid-cols-5 gap-2 items-center shadow-sm p-2 border-2 border-[#E2E8F0] rounded-2xl">
-                  <img src={Technology.icon} alt="" className="col-span-1" />
+                  <img src={Technology.icon} alt="" className="col-span-1 w-10 h-10" />
                   <div className="col-span-3">
                     <p className="font-semibold text-1xl">{Technology.name}</p>
                     <p className="text-[#94A3B8] text-[12px]">
