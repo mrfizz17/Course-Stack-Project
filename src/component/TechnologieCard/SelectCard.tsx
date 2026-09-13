@@ -1,8 +1,8 @@
 //select-------card
 
-import React, { useState, type Dispatch, type SetStateAction } from "react";
+import  { useState, type Dispatch, type SetStateAction } from "react";
 
-import reactLogo from "../../assets/react.svg";
+
 import { FaStar } from "react-icons/fa";
 import type { technologyMainType } from "../../types/mainType";
 import { toast } from "react-toastify";
@@ -18,13 +18,10 @@ const SelectCard = ({
   setSelectedTechnology,
   selectedTechnology,
 }: IpropsType) => {
-  const [disableButton, setDisableButton] = useState(false);
+ 
 
   const handleSelect = (technology: technologyMainType) => {
     if (selectedTechnology.find((tech) => tech.id === technology.id)) {
-      toast("already selected");
-
-      setDisableButton(true);
       return;
     }
 

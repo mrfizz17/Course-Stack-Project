@@ -65,4 +65,4 @@ The parent sends data using **props**. The child can send something back by call
 
 ## 💡 What I Learned
 
-This project helped me understand how React components work together and how state changes can update the UI automatically. I also got more comfortable with props, hooks, `.map()`, and conditional rendering.
+This project helped me understand how React components work together and how state changes can update the UI automatically. I also got more comfortable with props, hooks, .map(), and conditional rendering.

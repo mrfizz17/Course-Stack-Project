@@ -15,7 +15,7 @@ const SelectedCard = ({
 }: IpropsType) => {
 
 
-  const handleDelete=(technology)=>{
+  const handleDelete=(technology:technologyMainType)=>{
 
     const updateTechnology= selectedTechnology.filter((tech)=>tech.id!==technology.id)
 
