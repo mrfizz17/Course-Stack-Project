@@ -8,5 +8,5 @@ export interface technologyMainType {
     rating:number,
     difficulty: string,
     badge: string
-  
+    badgeColor:string
 }
